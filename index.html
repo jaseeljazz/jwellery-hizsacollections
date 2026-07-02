@@ -1,0 +1,1650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Hizsa Collections | Anti-Tarnish Jewelry in Kerala</title>
+  <meta name="description" content="Shop anti-tarnish jewelry in Kerala from Hizsa Collections. Waterproof rings, chains, earrings, anklets, bangles, and chokers for elegant everyday wear." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --charcoal: #24282b;
+      --charcoal-deep: #151719;
+      --charcoal-soft: #34393d;
+      --ivory: #eee8dc;
+      --ivory-light: #faf7f0;
+      --sand: #d7cdbd;
+      --taupe: #a99e90;
+      --muted: #70685f;
+      --gold: #b89a62;
+      --line: rgba(36, 40, 43, 0.13);
+      --white-glass: rgba(250, 247, 240, 0.72);
+      --shadow-soft: 0 28px 80px rgba(21, 23, 25, 0.13);
+      --shadow-card: 0 18px 48px rgba(21, 23, 25, 0.09);
+      --ease: cubic-bezier(.2,.8,.2,1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--charcoal);
+      font-family: "Inter", sans-serif;
+      background:
+        radial-gradient(circle at 8% 8%, rgba(238, 232, 220, 0.95), transparent 28rem),
+        radial-gradient(circle at 92% 12%, rgba(184, 154, 98, 0.16), transparent 27rem),
+        linear-gradient(180deg, #f5f0e8 0%, #eee8dc 48%, #f8f5ee 100%);
+      overflow-x: hidden;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font-family: inherit;
+    }
+
+    .container-custom {
+      width: min(100% - 28px, 1340px);
+      margin-inline: auto;
+    }
+
+    .section-space {
+      padding: 82px 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 36px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .section-title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.45rem, 7vw, 5.8rem);
+      font-weight: 500;
+      letter-spacing: -0.055em;
+      line-height: 0.92;
+      margin: 0;
+      color: var(--charcoal-deep);
+    }
+
+    .section-copy {
+      max-width: 640px;
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.85;
+      margin: 18px 0 0;
+    }
+
+    /* Buttons */
+
+    .btn-hizsa {
+      border: 1px solid var(--charcoal-deep);
+      background: var(--charcoal-deep);
+      color: var(--ivory-light);
+      border-radius: 999px;
+      padding: 13px 24px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all .35s var(--ease);
+    }
+
+    .btn-hizsa:hover {
+      background: transparent;
+      color: var(--charcoal-deep);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-hizsa {
+      border: 1px solid var(--line);
+      background: rgba(250, 247, 240, 0.58);
+      color: var(--charcoal-deep);
+      border-radius: 999px;
+      padding: 13px 24px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      backdrop-filter: blur(18px);
+      transition: all .35s var(--ease);
+    }
+
+    .btn-outline-hizsa:hover {
+      background: var(--charcoal-deep);
+      color: var(--ivory-light);
+      border-color: var(--charcoal-deep);
+      transform: translateY(-2px);
+    }
+
+    /* Navbar */
+
+    .site-nav {
+      position: fixed;
+      top: 14px;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      pointer-events: none;
+    }
+
+    .nav-shell {
+      width: min(100% - 28px, 1340px);
+      margin-inline: auto;
+      pointer-events: auto;
+      border: 1px solid rgba(238, 232, 220, 0.22);
+      background: rgba(36, 40, 43, 0.76);
+      backdrop-filter: blur(24px);
+      border-radius: 999px;
+      box-shadow: 0 18px 58px rgba(21, 23, 25, 0.22);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 9px 10px 9px 18px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: var(--ivory);
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--ivory);
+      display: grid;
+      place-items: center;
+      color: var(--charcoal-deep);
+      border: 1px solid rgba(255,255,255,0.35);
+      box-shadow: inset 0 0 0 4px rgba(36, 40, 43, 0.05);
+      flex: 0 0 36px;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+
+    .brand-script {
+      font-family: "Allura", cursive;
+      font-size: 1.55rem;
+      letter-spacing: 0.02em;
+      font-weight: 400;
+    }
+
+    .brand-small {
+      font-size: 0.54rem;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      color: rgba(238, 232, 220, 0.72);
+      margin-top: -2px;
+    }
+
+    .nav-menu {
+      display: none;
+      align-items: center;
+      gap: 30px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .nav-menu a {
+      color: rgba(238, 232, 220, 0.74);
+      font-size: 0.74rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.11em;
+      transition: color .3s ease;
+    }
+
+    .nav-menu a:hover {
+      color: var(--ivory);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .nav-icon {
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+      border: 1px solid rgba(238, 232, 220, 0.24);
+      background: rgba(238, 232, 220, 0.08);
+      color: var(--ivory);
+      display: grid;
+      place-items: center;
+      transition: all .32s var(--ease);
+      position: relative;
+    }
+
+    .nav-icon:hover {
+      background: var(--ivory);
+      color: var(--charcoal-deep);
+      transform: translateY(-1px);
+    }
+
+    .cart-pill {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      font-size: 0.6rem;
+      font-weight: 700;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      min-height: 100vh;
+      z-index: 999;
+      background: rgba(36, 40, 43, 0.96);
+      backdrop-filter: blur(24px);
+      padding: 104px 24px 42px;
+      transform: translateY(-105%);
+      transition: transform .48s var(--ease);
+    }
+
+    .mobile-menu.active {
+      transform: translateY(0);
+    }
+
+    .mobile-menu a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(238, 232, 220, 0.16);
+      padding: 22px 0;
+      color: var(--ivory);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2.35rem;
+      font-weight: 400;
+      letter-spacing: -0.045em;
+    }
+
+    /* Simple Full Background Hero */
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(21, 23, 25, 0.68) 0%,
+          rgba(21, 23, 25, 0.42) 42%,
+          rgba(21, 23, 25, 0.18) 100%
+        ),
+        url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=2200&q=90")
+        center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      padding: 120px 0 80px;
+    }
+
+    .hero-content {
+      width: min(100% - 32px, 1180px);
+      margin-inline: auto;
+      color: var(--ivory-light);
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-small-text {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: rgba(250, 247, 240, 0.78);
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(3.8rem, 13vw, 9rem);
+      font-weight: 400;
+      line-height: 0.86;
+      letter-spacing: -0.075em;
+      max-width: 860px;
+      margin: 0;
+    }
+
+    .hero-title .script {
+      font-family: "Allura", cursive;
+      letter-spacing: 0;
+      font-size: 1.04em;
+      font-weight: 400;
+    }
+
+    .hero-copy {
+      max-width: 560px;
+      margin: 24px 0 0;
+      color: rgba(250, 247, 240, 0.78);
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .btn-hero {
+      border: 1px solid var(--ivory-light);
+      background: var(--ivory-light);
+      color: var(--charcoal-deep);
+      border-radius: 999px;
+      padding: 13px 24px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all .35s var(--ease);
+    }
+
+    .btn-hero:hover {
+      background: transparent;
+      color: var(--ivory-light);
+      transform: translateY(-2px);
+    }
+
+    .btn-hero-outline {
+      background: transparent;
+      color: var(--ivory-light);
+    }
+
+    .btn-hero-outline:hover {
+      background: var(--ivory-light);
+      color: var(--charcoal-deep);
+    }
+
+    /* Trust Strip */
+
+    .trust-strip {
+      padding: 26px 0 0;
+    }
+
+    .trust-row {
+      border: 1px solid var(--line);
+      background: rgba(250, 247, 240, 0.58);
+      backdrop-filter: blur(18px);
+      border-radius: 26px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+      box-shadow: var(--shadow-card);
+    }
+
+    .trust-item {
+      padding: 22px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .trust-item:last-child {
+      border-bottom: 0;
+    }
+
+    .trust-icon {
+      width: 44px;
+      height: 44px;
+      flex: 0 0 44px;
+      border-radius: 50%;
+      background: var(--charcoal);
+      color: var(--ivory);
+      display: grid;
+      place-items: center;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--charcoal-deep);
+    }
+
+    .trust-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-top: 3px;
+    }
+
+    /* Categories */
+
+    .category-wrap {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 34px 2px 18px;
+      scrollbar-width: none;
+    }
+
+    .category-wrap::-webkit-scrollbar {
+      display: none;
+    }
+
+    .category-card {
+      min-width: 220px;
+      height: 292px;
+      border-radius: 30px;
+      overflow: hidden;
+      position: relative;
+      background: var(--sand);
+      box-shadow: var(--shadow-card);
+    }
+
+    .category-card img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform .75s var(--ease);
+      filter: saturate(0.92);
+    }
+
+    .category-card:hover img {
+      transform: scale(1.07);
+    }
+
+    .category-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 34%, rgba(21,23,25,0.74)),
+        radial-gradient(circle at 20% 20%, rgba(238,232,220,0.22), transparent 16rem);
+    }
+
+    .category-content {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      bottom: 18px;
+      z-index: 2;
+      color: var(--ivory-light);
+    }
+
+    .category-content span {
+      display: block;
+      color: rgba(250,247,240,0.7);
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 5px;
+    }
+
+    .category-content h3 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: 2.05rem;
+      line-height: 0.94;
+      font-weight: 400;
+      letter-spacing: -0.045em;
+      margin: 0;
+    }
+
+    /* Products */
+
+    .section-top {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      margin-bottom: 34px;
+    }
+
+    .slider-controls {
+      display: flex;
+      gap: 9px;
+    }
+
+    .slider-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: rgba(250, 247, 240, 0.64);
+      color: var(--charcoal-deep);
+      display: grid;
+      place-items: center;
+      transition: all .32s var(--ease);
+    }
+
+    .slider-btn:hover {
+      background: var(--charcoal-deep);
+      color: var(--ivory-light);
+      transform: translateY(-2px);
+    }
+
+    .product-slider {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      padding: 2px 2px 24px;
+      scrollbar-width: none;
+    }
+
+    .product-slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .product-card {
+      min-width: 262px;
+      border: 1px solid var(--line);
+      background: rgba(250, 247, 240, 0.76);
+      backdrop-filter: blur(18px);
+      border-radius: 30px;
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+      transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 70px rgba(21, 23, 25, 0.14);
+    }
+
+    .product-media {
+      height: 318px;
+      position: relative;
+      overflow: hidden;
+      background: var(--sand);
+    }
+
+    .product-media img {
+      height: 100%;
+      object-fit: cover;
+      transition: transform .75s var(--ease);
+    }
+
+    .product-card:hover .product-media img {
+      transform: scale(1.055);
+    }
+
+    .product-badge {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      border: 1px solid rgba(250,247,240,0.46);
+      background: rgba(250,247,240,0.64);
+      backdrop-filter: blur(16px);
+      border-radius: 999px;
+      padding: 8px 11px;
+      color: var(--charcoal-deep);
+      font-size: 0.58rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    .wishlist {
+      position: absolute;
+      top: 13px;
+      right: 13px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid rgba(250,247,240,0.48);
+      background: rgba(250,247,240,0.64);
+      backdrop-filter: blur(16px);
+      color: var(--charcoal-deep);
+      display: grid;
+      place-items: center;
+      transition: all .3s var(--ease);
+    }
+
+    .wishlist:hover,
+    .wishlist.active {
+      background: var(--charcoal-deep);
+      color: var(--ivory-light);
+    }
+
+    .product-info {
+      padding: 18px;
+    }
+
+    .product-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+    }
+
+    .rating {
+      color: var(--gold);
+      letter-spacing: 0;
+      text-transform: none;
+      white-space: nowrap;
+    }
+
+    .product-title {
+      font-size: 0.98rem;
+      line-height: 1.45;
+      font-weight: 600;
+      margin: 0;
+      color: var(--charcoal-deep);
+      min-height: 44px;
+    }
+
+    .product-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 17px;
+    }
+
+    .price {
+      color: var(--charcoal-deep);
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .quick-add {
+      border: 1px solid var(--line);
+      background: transparent;
+      color: var(--charcoal-deep);
+      border-radius: 999px;
+      padding: 9px 14px;
+      font-size: 0.72rem;
+      font-weight: 800;
+      transition: all .3s var(--ease);
+    }
+
+    .quick-add:hover {
+      background: var(--charcoal-deep);
+      color: var(--ivory-light);
+      border-color: var(--charcoal-deep);
+    }
+
+    /* Editorial */
+
+    .editorial {
+      border-radius: 34px;
+      overflow: hidden;
+      background: var(--charcoal-deep);
+      color: var(--ivory-light);
+      display: grid;
+      grid-template-columns: 1fr;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .editorial-image {
+      min-height: 440px;
+      background: url("https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1500&q=90") center/cover no-repeat;
+      position: relative;
+    }
+
+    .editorial-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent, rgba(21,23,25,0.44));
+    }
+
+    .editorial-content {
+      padding: 34px;
+    }
+
+    .editorial-content h2 {
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(2.7rem, 9vw, 5.7rem);
+      font-weight: 400;
+      letter-spacing: -0.065em;
+      line-height: 0.9;
+      margin: 0;
+    }
+
+    .editorial-content p {
+      color: rgba(250,247,240,0.7);
+      line-height: 1.82;
+      margin: 20px 0 0;
+      max-width: 570px;
+    }
+
+    .care-list {
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 14px;
+    }
+
+    .care-list li {
+      display: flex;
+      gap: 12px;
+      color: rgba(250,247,240,0.76);
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .care-list i {
+      color: var(--gold);
+      margin-top: 4px;
+    }
+
+    /* Footer */
+
+    .footer {
+      margin-top: 54px;
+      background: var(--charcoal-deep);
+      color: var(--ivory-light);
+      border-radius: 38px 38px 0 0;
+      padding: 64px 0 24px;
+    }
+
+    .footer-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .footer-copy {
+      color: rgba(250,247,240,0.62);
+      line-height: 1.82;
+      max-width: 430px;
+      font-size: 0.9rem;
+    }
+
+    .footer-heading {
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: rgba(250,247,240,0.48);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 11px;
+    }
+
+    .footer-links a {
+      color: rgba(250,247,240,0.74);
+      font-size: 0.9rem;
+      transition: color .3s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--ivory-light);
+    }
+
+    .newsletter-box {
+      border: 1px solid rgba(250,247,240,0.14);
+      background: rgba(250,247,240,0.06);
+      border-radius: 999px;
+      display: flex;
+      align-items: center;
+      padding: 6px;
+      margin-top: 18px;
+    }
+
+    .newsletter-box input {
+      flex: 1;
+      min-width: 0;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--ivory-light);
+      padding: 11px 12px;
+      font-size: 0.86rem;
+    }
+
+    .newsletter-box input::placeholder {
+      color: rgba(250,247,240,0.38);
+    }
+
+    .newsletter-box button {
+      border: 0;
+      background: var(--ivory-light);
+      color: var(--charcoal-deep);
+      border-radius: 999px;
+      padding: 10px 15px;
+      font-size: 0.76rem;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .socials {
+      display: flex;
+      gap: 9px;
+      margin-top: 20px;
+    }
+
+    .socials a {
+      width: 39px;
+      height: 39px;
+      border-radius: 50%;
+      border: 1px solid rgba(250,247,240,0.14);
+      color: var(--ivory-light);
+      display: grid;
+      place-items: center;
+      transition: all .3s var(--ease);
+    }
+
+    .socials a:hover {
+      background: var(--ivory-light);
+      color: var(--charcoal-deep);
+      transform: translateY(-2px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(250,247,240,0.1);
+      margin-top: 44px;
+      padding-top: 20px;
+      color: rgba(250,247,240,0.42);
+      font-size: 0.78rem;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .toast-mini {
+      position: fixed;
+      left: 50%;
+      bottom: 22px;
+      transform: translateX(-50%) translateY(120px);
+      z-index: 3000;
+      background: var(--charcoal-deep);
+      color: var(--ivory-light);
+      border: 1px solid rgba(250,247,240,0.1);
+      box-shadow: 0 22px 60px rgba(0,0,0,0.24);
+      border-radius: 999px;
+      padding: 13px 18px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: transform .38s var(--ease);
+      white-space: nowrap;
+    }
+
+    .toast-mini.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Responsive */
+
+    @media (min-width: 768px) {
+      .container-custom {
+        width: min(100% - 48px, 1340px);
+      }
+
+      .nav-shell {
+        width: min(100% - 48px, 1340px);
+      }
+
+      .trust-row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .trust-item {
+        border-bottom: 0;
+        border-right: 1px solid var(--line);
+        padding: 24px;
+      }
+
+      .trust-item:last-child {
+        border-right: 0;
+      }
+
+      .category-card {
+        min-width: 260px;
+        height: 345px;
+      }
+
+      .product-card {
+        min-width: 296px;
+      }
+
+      .product-media {
+        height: 360px;
+      }
+
+      .section-top {
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+      }
+
+      .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .nav-menu {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: none;
+      }
+
+      .editorial {
+        grid-template-columns: 1.15fr 0.85fr;
+      }
+
+      .editorial-image {
+        min-height: 620px;
+      }
+
+      .editorial-content {
+        padding: 56px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .section-space {
+        padding: 102px 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        min-height: 92vh;
+        background:
+          linear-gradient(
+            180deg,
+            rgba(21, 23, 25, 0.30) 0%,
+            rgba(21, 23, 25, 0.72) 100%
+          ),
+          url("https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=90")
+          center / cover no-repeat;
+        align-items: flex-end;
+        padding: 110px 0 54px;
+      }
+
+      .hero-title {
+        font-size: clamp(3.4rem, 17vw, 5.8rem);
+      }
+
+      .hero-copy {
+        font-size: 0.94rem;
+      }
+
+      .hero-actions {
+        gap: 10px;
+      }
+
+      .btn-hero {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .nav-shell {
+        padding-left: 14px;
+      }
+
+      .brand-script {
+        font-size: 1.38rem;
+      }
+
+      .brand-small {
+        font-size: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav">
+    <div class="nav-shell">
+      <a href="#" class="brand" aria-label="Hizsa Collections Home">
+        <span class="brand-mark"><i class="fa-solid fa-leaf"></i></span>
+        <span class="brand-text">
+          <span class="brand-script">Hizsa</span>
+          <span class="brand-small">Collections</span>
+        </span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#new-arrivals">New</a></li>
+        <li><a href="#best-sellers">Best Sellers</a></li>
+        <li><a href="#categories">Collections</a></li>
+        <li><a href="#care">Care</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="nav-icon" href="#" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a class="nav-icon" href="#" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></a>
+        <a class="nav-icon" href="#" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-pill">0</span>
+        </a>
+        <button class="nav-icon menu-toggle" type="button" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="#new-arrivals">New Arrivals <i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#best-sellers">Best Sellers <i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#categories">Collections <i class="fa-solid fa-arrow-right"></i></a>
+    <a href="#care">Jewelry Care <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
+
+  <!-- Simple Background Image Hero -->
+  <header class="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <p class="hero-small-text">Anti-tarnish jewelry in Kerala</p>
+
+      <h1 class="hero-title">
+        Soft gold pieces by <span class="script">Hizsa</span>
+      </h1>
+
+      <p class="hero-copy">
+        Waterproof, anti-tarnish jewelry made for everyday styling, humid days,
+        festive nights, gifting, and effortless daily wear.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#new-arrivals" class="btn-hero">
+          Shop Collection <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a href="#best-sellers" class="btn-hero btn-hero-outline">
+          View Best Sellers
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Trust Strip -->
+  <section class="trust-strip">
+    <div class="container-custom">
+      <div class="trust-row">
+        <div class="trust-item" data-aos="fade-up">
+          <div class="trust-icon"><i class="fa-solid fa-shield-heart"></i></div>
+          <div>
+            <strong>Anti-tarnish finish</strong>
+            <span>Built for lasting shine and low-maintenance care.</span>
+          </div>
+        </div>
+
+        <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="trust-icon"><i class="fa-solid fa-water"></i></div>
+          <div>
+            <strong>Waterproof wear</strong>
+            <span>Suitable for humid days, sweat, and light water exposure.</span>
+          </div>
+        </div>
+
+        <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="trust-icon"><i class="fa-solid fa-gift"></i></div>
+          <div>
+            <strong>Gift-ready styling</strong>
+            <span>Minimal pieces for birthdays, bridesmaids, and festive gifting.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section-space" id="categories">
+    <div class="container-custom">
+      <div data-aos="fade-up">
+        <span class="eyebrow">Collections</span>
+        <h2 class="section-title">Shop by silhouette.</h2>
+        <p class="section-copy">
+          Explore refined jewelry edits for daily layering, soft occasion styling,
+          and modern gold-toned looks.
+        </p>
+      </div>
+
+      <div class="category-wrap" data-aos="fade-up" data-aos-delay="100">
+        <a href="listing.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1603974372039-adc49044b6bd?auto=format&fit=crop&w=900&q=90" alt="Gold choker necklace">
+          <div class="category-content">
+            <span>Layered neckwear</span>
+            <h3>Chokers</h3>
+          </div>
+        </a>
+
+        <a href="listing.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=90" alt="Gold ring collection">
+          <div class="category-content">
+            <span>Stackable shine</span>
+            <h3>Rings</h3>
+          </div>
+        </a>
+
+        <a href="listing.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=90" alt="Gold anklet jewelry">
+          <div class="category-content">
+            <span>Soft foot jewelry</span>
+            <h3>Anklets</h3>
+          </div>
+        </a>
+
+        <a href="listing.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=90" alt="Gold bangles">
+          <div class="category-content">
+            <span>Wrist accents</span>
+            <h3>Bangles</h3>
+          </div>
+        </a>
+
+        <a href="listing.html" class="category-card">
+          <img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=900&q=90" alt="Gold earrings">
+          <div class="category-content">
+            <span>Everyday frames</span>
+            <h3>Earrings</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Arrivals -->
+  <section class="section-space pt-0" id="new-arrivals">
+    <div class="container-custom">
+      <div class="section-top" data-aos="fade-up">
+        <div>
+          <span class="eyebrow">New arrivals</span>
+          <h2 class="section-title">Freshly added.</h2>
+          <p class="section-copy">
+            Clean, feminine, and wearable anti-tarnish pieces selected for effortless everyday styling.
+          </p>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn slider-prev" data-slider="#newSlider" aria-label="Previous">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="slider-btn slider-next" data-slider="#newSlider" aria-label="Next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="product-slider" id="newSlider" data-aos="fade-up" data-aos-delay="100">
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=900&q=90" alt="Gold hoop earrings">
+            <span class="product-badge">Anti-Tarnish</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Earrings</span><span class="rating">★ 4.8</span></div>
+            <h3 class="product-title">Dewline Gold Hoops</h3>
+            <div class="product-bottom">
+              <span class="price">₹899</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=900&q=90" alt="Gold ring set">
+            <span class="product-badge">Waterproof</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Rings</span><span class="rating">★ 4.7</span></div>
+            <h3 class="product-title">Minimal Stack Ring Set</h3>
+            <div class="product-bottom">
+              <span class="price">₹749</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=90" alt="Gold rope chain">
+            <span class="product-badge">Daily Wear</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Chains</span><span class="rating">★ 4.9</span></div>
+            <h3 class="product-title">Everyday Rope Chain</h3>
+            <div class="product-bottom">
+              <span class="price">₹1,199</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=90" alt="Gold bracelet stack">
+            <span class="product-badge">Anti-Tarnish</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Bracelet</span><span class="rating">★ 4.8</span></div>
+            <h3 class="product-title">Hizsa Bracelet Stack</h3>
+            <div class="product-bottom">
+              <span class="price">₹1,049</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=900&q=90" alt="Gold pendant necklace">
+            <span class="product-badge">Waterproof</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Pendant</span><span class="rating">★ 4.6</span></div>
+            <h3 class="product-title">Moonlit Pendant Chain</h3>
+            <div class="product-bottom">
+              <span class="price">₹999</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Editorial / Care -->
+  <section class="section-space pt-0" id="care">
+    <div class="container-custom">
+      <div class="editorial" data-aos="fade-up">
+        <div class="editorial-image"></div>
+
+        <div class="editorial-content">
+          <span class="eyebrow">Care notes</span>
+          <h2>Jewelry made for real days.</h2>
+          <p>
+            Hizsa Collections focuses on soft gold-toned jewelry that looks refined without demanding heavy care.
+            Wear it for daily styling, travel, gifting, and festive layering.
+          </p>
+
+          <ul class="care-list">
+            <li><i class="fa-solid fa-check"></i> Wipe gently after heavy sweat, perfume, or lotion exposure.</li>
+            <li><i class="fa-solid fa-check"></i> Store pieces separately to reduce scratches and friction.</li>
+            <li><i class="fa-solid fa-check"></i> Pair with sarees, kurtas, linen sets, dresses, and western outfits.</li>
+            <li><i class="fa-solid fa-check"></i> Use for everyday wear, college looks, office styling, and gifting.</li>
+          </ul>
+
+          <div class="mt-4">
+            <a href="#best-sellers" class="btn-hizsa">Shop durable favorites</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Sellers -->
+  <section class="section-space pt-0" id="best-sellers">
+    <div class="container-custom">
+      <div class="section-top" data-aos="fade-up">
+        <div>
+          <span class="eyebrow">Best sellers</span>
+          <h2 class="section-title">Loved by customers.</h2>
+          <p class="section-copy">
+            Popular Hizsa pieces for women who prefer minimal jewelry with stronger daily-wear performance.
+          </p>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-btn slider-prev" data-slider="#bestSlider" aria-label="Previous">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="slider-btn slider-next" data-slider="#bestSlider" aria-label="Next">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="product-slider" id="bestSlider" data-aos="fade-up" data-aos-delay="100">
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1589128777073-263566ae5e4d?auto=format&fit=crop&w=900&q=90" alt="Huggie hoop earrings">
+            <span class="product-badge">Best Seller</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Hoops</span><span class="rating">★ 5.0</span></div>
+            <h3 class="product-title">Everyday Huggie Hoops</h3>
+            <div class="product-bottom">
+              <span class="price">₹799</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&w=900&q=90" alt="Layered gold necklace">
+            <span class="product-badge">Layering</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Necklace</span><span class="rating">★ 4.9</span></div>
+            <h3 class="product-title">Layered Gold Necklace</h3>
+            <div class="product-bottom">
+              <span class="price">₹1,499</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1619119069152-a2b331eb392a?auto=format&fit=crop&w=900&q=90" alt="Charm bracelet chain">
+            <span class="product-badge">Gift Pick</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Bracelet</span><span class="rating">★ 4.8</span></div>
+            <h3 class="product-title">Charm Bracelet Chain</h3>
+            <div class="product-bottom">
+              <span class="price">₹999</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=900&q=90" alt="Pearl glow earrings">
+            <span class="product-badge">Elegant</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Earrings</span><span class="rating">★ 4.9</span></div>
+            <h3 class="product-title">Pearl Glow Earrings</h3>
+            <div class="product-bottom">
+              <span class="price">₹899</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+        <article class="product-card">
+          <a href="product-details.html">
+          <div class="product-media">
+            <img src="https://images.unsplash.com/photo-1600721391776-b5cd0e0048f9?auto=format&fit=crop&w=900&q=90" alt="Gold stone ring">
+            <span class="product-badge">Festive</span>
+            <button class="wishlist" type="button"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <div class="product-meta"><span>Ring</span><span class="rating">★ 4.7</span></div>
+            <h3 class="product-title">Festive Stone Ring</h3>
+            <div class="product-bottom">
+              <span class="price">₹949</span>
+              <button class="quick-add" type="button">Quick Add</button>
+            </div>
+          </div>
+          </a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-custom">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div class="footer-brand">
+            <span class="brand-mark"><i class="fa-solid fa-leaf"></i></span>
+            <span class="brand-text">
+              <span class="brand-script">Hizsa</span>
+              <span class="brand-small">Collections</span>
+            </span>
+          </div>
+
+          <p class="footer-copy">
+            Anti-tarnish, waterproof jewelry for women who want soft gold styling,
+            everyday elegance, and low-maintenance shine.
+          </p>
+
+          <div class="socials">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Shop</h4>
+          <ul class="footer-links">
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#best-sellers">Best Sellers</a></li>
+            <li><a href="#categories">Chokers</a></li>
+            <li><a href="#categories">Rings</a></li>
+            <li><a href="#categories">Anklets</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#care">Jewelry Care</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h4 class="footer-heading">Join the club</h4>
+          <p class="footer-copy">
+            Get early access to new drops, styling notes, and Kerala-only festive edits.
+          </p>
+
+          <form class="newsletter-box">
+            <input type="email" placeholder="Email address" required>
+            <button type="submit">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Hizsa Collections. All rights reserved.</span>
+        <span>Kochi · Calicut · Trivandrum · Thrissur · Kannur</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-mini" id="toastMini">Added to cart</div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      AOS.init({
+        duration: 850,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 80
+      });
+
+      let cartCount = 0;
+
+      $(".menu-toggle").on("click", function () {
+        $(".mobile-menu").toggleClass("active");
+
+        const icon = $(this).find("i");
+
+        if ($(".mobile-menu").hasClass("active")) {
+          icon.removeClass("fa-bars").addClass("fa-xmark");
+        } else {
+          icon.removeClass("fa-xmark").addClass("fa-bars");
+        }
+      });
+
+      $(".mobile-menu a").on("click", function () {
+        $(".mobile-menu").removeClass("active");
+        $(".menu-toggle i").removeClass("fa-xmark").addClass("fa-bars");
+      });
+
+      $(".slider-next").on("click", function () {
+        const target = $($(this).data("slider"));
+        target.animate({
+          scrollLeft: target.scrollLeft() + 340
+        }, 420);
+      });
+
+      $(".slider-prev").on("click", function () {
+        const target = $($(this).data("slider"));
+        target.animate({
+          scrollLeft: target.scrollLeft() - 340
+        }, 420);
+      });
+
+      $(".wishlist").on("click", function () {
+        $(this).toggleClass("active");
+
+        const icon = $(this).find("i");
+
+        if ($(this).hasClass("active")) {
+          icon.removeClass("fa-regular").addClass("fa-solid");
+        } else {
+          icon.removeClass("fa-solid").addClass("fa-regular");
+        }
+      });
+
+      $(".quick-add").on("click", function () {
+        cartCount++;
+        $(".cart-pill").text(cartCount);
+
+        const productName = $(this).closest(".product-card").find(".product-title").text();
+
+        $("#toastMini")
+          .text(productName + " added to cart")
+          .addClass("show");
+
+        setTimeout(function () {
+          $("#toastMini").removeClass("show");
+        }, 1800);
+      });
+
+      $(".newsletter-box").on("submit", function (e) {
+        e.preventDefault();
+
+        $("#toastMini")
+          .text("You joined the Hizsa club")
+          .addClass("show");
+
+        setTimeout(function () {
+          $("#toastMini").removeClass("show");
+        }, 1800);
+
+        $(this).find("input").val("");
+      });
+    });
+  </script>
+
+</body>
+</html>
